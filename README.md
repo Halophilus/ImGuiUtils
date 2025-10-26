@@ -1,6 +1,6 @@
 # ImGuiUtils
 
-A comprehensive C++ utility library for Dear ImGui that simplifies common rendering, positioning, color manipulation, and texture loading tasks.
+A comprehensive C++ utility library for Dear ImGui that simplifies common rendering, positioning, color manipulation, and texture loading tasks. There are probably better means of generating this functionality in vanilla ImGui, but I generated these tools while working on a series of ImGui projects and they've proven consistently useful when you're trying to accomplish very specific formatting. I was able to make some pretty good looking applications this way
 
 ## Overview
 
