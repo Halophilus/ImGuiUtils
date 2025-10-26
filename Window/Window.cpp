@@ -1,7 +1,6 @@
 /*
- * Window.cpp / Aureon 2D graphical user interface
- *
- * Ben Henshaw / Spatial Surgical, LLC.
+ * Window.cpp
+ * Ben Henshaw
  * 8/12/2025
  *
  * Source file implementation of abstract parent Window class

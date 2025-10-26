@@ -1,7 +1,6 @@
 /*
- * Window.h / Aureon 2D graphical user interface
- *
- * Ben Henshaw / Spatial Surgical, LLC.
+ * Window.h
+ * Ben Henshaw
  * 8/12/2025
  *
  * Header for abstract parent class encapsulating Dear ImGui window behavior
