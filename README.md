@@ -1,7 +1,6 @@
 # ImGuiUtils
 
-A comprehensive C++ utility library for Dear ImGui that simplifies common rendering, positioning, color manipulation, and texture loading tasks. There are probably better means of generating this functionality in vanilla ImGui, but I generated these tools while working on a series of ImGui projects and they've proven consistently useful when you're trying to accomplish very specific formatting. I was able to make some pretty good looking applications this way.
-
+A C++ utility library for Dear ImGui that simplifies common rendering, positioning, color manipulation, and texture loading tasks.
 ## Overview
 
 ImGuiUtils is a collection of procedural helper functions organized into distinct namespaces that streamline ImGui development. The library provides high-level abstractions for drawing operations, color interpolation, object positioning, texture management, and vector mathematics.
@@ -11,7 +10,7 @@ ImGuiUtils is a collection of procedural helper functions organized into distinc
 
 ## Features
 
-### 🎨 DrawTools
+### DrawTools
 Procedural drawing functions for rendering common UI elements:
 - **Text Rendering:** Basic text, stroked text, and text with highlights
 - **Shapes:** Filled rectangles, rounded rectangles, and stroked variants
@@ -19,7 +18,7 @@ Procedural drawing functions for rendering common UI elements:
 - **Grids:** Empty grids, populated grids, and sparse rounded grids with optional date labels
 - **Decorations:** Boxes, strokes, and highlights with customizable styling
 
-### 🌈 ColorTools
+### ColorTools
 Color manipulation and interpolation utilities:
 - Linear interpolation (lerp) between two RGBA colors
 - RGB color interpolation returning both `ImVec4` and `ImU32` formats
@@ -27,7 +26,7 @@ Color manipulation and interpolation utilities:
 - Alpha channel manipulation for existing colors
 - Color format conversions (RGB → ImVec4, ImU32)
 
-### 📐 PositionTools
+### PositionTools
 Comprehensive positioning system for UI element alignment:
 - **Document Alignment:** Left, right, and center alignment with line-based positioning
 - **Outer Alignment:** Position objects relative to other objects' edges (top, bottom, sides)
@@ -35,14 +34,14 @@ Comprehensive positioning system for UI element alignment:
 - **Grid Alignment:** Calculate cell positions in grid layouts
 - **Frame Utilities:** Calculate nested frame dimensions with padding
 
-### 🖼️ TextureLoader
+### TextureLoader
 Simple OpenGL texture loading system:
 - Load PNG images from file paths
 - Automatic RGBA conversion
 - OpenGL texture object creation with standard filtering
 - `TextureData` struct containing texture ID and dimensions
 
-### ➕ ImVec2Operators
+### ImVec2Operators
 Mathematical operator overloads for `ImVec2`:
 - **Addition (`+`):** Vector translation
 - **Subtraction (`-`):** Relative positioning
@@ -158,10 +157,6 @@ All functions are organized into namespaces matching their header files:
 ## License
 
 This is a personal utility library. Please verify licensing terms with the author before use in commercial projects.
-
-## Contributing
-
-This library was developed for personal projects. For questions or suggestions, contact Ben Henshaw.
 
 ---
 
