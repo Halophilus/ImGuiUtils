@@ -369,7 +369,7 @@ namespace Draw {
         ImDrawList* drawList = ImGui::GetWindowDrawList();
         ImU32 tintColor = IM_COL32(255.0, 255.0, 255.0, transparency * 255.0);
         drawList->AddImage(
-            sprite.id,
+            (ImTextureID)(intptr_t)sprite.id,
             position,
             position + ImVec2(sprite.width, sprite.height),
                 ImVec2(0.0f, 0.0f),
@@ -394,7 +394,7 @@ namespace Draw {
         ImU32 colorWithAlpha = Color::WithAlpha(tintColor, transparency); // mask out existing alpha
 
         drawList->AddImage(
-            sprite.id,
+            (ImTextureID)(intptr_t)sprite.id,
             position,
             position + ImVec2(sprite.width, sprite.height),
                 ImVec2(0.0f, 0.0f),
@@ -425,7 +425,7 @@ namespace Draw {
         ImVec2 bottomRight = position + ImVec2(endFraction.x * spriteSize.x, endFraction.y * spriteSize.y);
 
         drawList->AddImage(
-            sprite.id,
+            (ImTextureID)(intptr_t)sprite.id,
             topLeft,        // Screen-space top-left
             bottomRight,    // Screen-space bottom-right
             startFraction,  // UV start
@@ -459,7 +459,7 @@ namespace Draw {
         ImVec2 endFraction = ImVec2(1.0f - margin, 1.0f - margin);
 
         drawList->AddImage(
-            sprite.id,
+            (ImTextureID)(intptr_t)sprite.id,
             topLeft,
             bottomRight,
             startFraction,
@@ -483,7 +483,7 @@ namespace Draw {
                                     (cropPosition.y + cropSize.y) / sprite.height);  // Fixed!
 
         drawList->AddImage(
-            sprite.id,
+            (ImTextureID)(intptr_t)sprite.id,
             topLeft,
             bottomRight,
             startFraction,
@@ -515,7 +515,7 @@ namespace Draw {
         ImVec2 endFraction   = ImVec2(1.0f - margin, 1.0f - margin);
 
         drawList->AddImageRounded(
-            sprite.id,
+            (ImTextureID)(intptr_t)sprite.id,
             topLeft,
             bottomRight,
             startFraction,
