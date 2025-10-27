@@ -37,9 +37,9 @@ namespace Color {
 
     // Function:    GetInterpolatedColor
     // ---------------------------------
-    // Linearly interpolates between the two Spatial Surgical colors to indicate percentage
+    // Linearly interpolates between the two default colors to indicate percentage
     //
-    // float percentage:      relative progress through the gradient of Aureon colors
+    // float percentage:      relative progress through the gradient of set colors
     //
     // Returns a solid ImVec4 hsl color
     ImVec4 GetInterpolatedColor(float percentage)
@@ -54,10 +54,10 @@ namespace Color {
 
     // Function:    GetInterpolatedColorU32
     // ------------------------------------
-    // Utilizes GetInterpolatedColor to interpolate Aureon-brand colors and converts it to ImU32
+    // Utilizes GetInterpolatedColor to interpolate default colors and converts it to ImU32
     // for font color applications
     //
-    // float percentage:    relative progress through the gradient of Aureon colors
+    // float percentage:    relative progress through the gradient of default colors
     //
     // Returns a solid ImU32 color
     ImU32 GetInterpolatedColorU32(float percentage) {
