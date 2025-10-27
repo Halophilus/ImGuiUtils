@@ -4,10 +4,6 @@ A C++ utility library for Dear ImGui that simplifies common rendering, positioni
 ## Overview
 
 ImGuiUtils is a collection of procedural helper functions organized into distinct namespaces that streamline ImGui development. The library provides high-level abstractions for drawing operations, color interpolation, object positioning, texture management, and vector mathematics.
-
-**Author:** Ben Henshaw  
-**Created:** July 2025
-
 ## Features
 
 ### DrawTools
